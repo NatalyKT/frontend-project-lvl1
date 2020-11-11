@@ -4,7 +4,7 @@
 
 **Brain-Even Asciinema**
 
-[![asciicast](https://asciinema.org/a/vWNV64KHBkWlZVNfqgzXXYXFS.svg)](https://asciinema.org/a/vWNV64KHBkWlZVNfqgzXXYXFS)
+[![asciicast](https://asciinema.org/a/lKdq5Mha2ApBhoNGMmaCbYCYV.svg)](https://asciinema.org/a/lKdq5Mha2ApBhoNGMmaCbYCYV)
 
 **Brain-Calc Asciinema**
 
@@ -17,3 +17,7 @@
 **Brain-Progression Asciinema**
 
 [![asciicast](https://asciinema.org/a/hMD4cMBaCcCcmCtHyhCwp7cGJ.svg)](https://asciinema.org/a/hMD4cMBaCcCcmCtHyhCwp7cGJ)
+
+**Brain-Prime Asciinema**
+
+[![asciicast](https://asciinema.org/a/L2sc0nNKVb8n2KWRy4ligwM7d.svg)](https://asciinema.org/a/L2sc0nNKVb8n2KWRy4ligwM7d)
