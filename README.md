@@ -8,7 +8,7 @@
 
 **Brain-Calc Asciinema**
 
-[![asciicast](https://asciinema.org/a/h8n4v1alsqwWXjVJS3fbkfJ1i.svg)](https://asciinema.org/a/h8n4v1alsqwWXjVJS3fbkfJ1i)
+[![asciicast](https://asciinema.org/a/8u8q2SvSwK1W45PBP3Xoklgtc.svg)](https://asciinema.org/a/8u8q2SvSwK1W45PBP3Xoklgtc)
 
 **Brain-GCD Asciinema**
 
@@ -17,3 +17,7 @@
 **Brain-Progression Asciinema**
 
 [![asciicast](https://asciinema.org/a/hMD4cMBaCcCcmCtHyhCwp7cGJ.svg)](https://asciinema.org/a/hMD4cMBaCcCcmCtHyhCwp7cGJ)
+
+**Brain-Prime Asciinema**
+
+[![asciicast](https://asciinema.org/a/L2sc0nNKVb8n2KWRy4ligwM7d.svg)](https://asciinema.org/a/L2sc0nNKVb8n2KWRy4ligwM7d)
