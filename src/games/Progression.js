@@ -17,16 +17,15 @@ const randomProgression = (firstNum, step, maxLength) => {
   return progression;
 };
 
-const specificGameTasks = () => {
-  // По аналогии с др.частями игры (рандом)
+const runCalculations = () => {
   const firstNumber = getRandomInRange(1, 10);
   const progressionStep = getRandomInRange(1, 10);
   const progressionLength = 5;
   const unknownNumber = getRandomInRange(0, progressionLength - 1);
   const progression = randomProgression(firstNumber, progressionStep, progressionLength);
 
-  const correctAnswer = `${progression[unknownNumber]}`;
-  // const correctAnswer = String(progression[unknownNumber]);
+  const correctAnswer = String(progression[unknownNumber]);
+  // const correctAnswer = `${progression[unknownNumber]}`; - убираем
   progression[unknownNumber] = '..';
   return {
     correctAnswer,
@@ -35,7 +34,7 @@ const specificGameTasks = () => {
 };
 
 const gameProgression = () => {
-  startGame(description, specificGameTasks);
+  startGame(description, runCalculations);
 };
 
 export default gameProgression;
