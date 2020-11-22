@@ -8,17 +8,13 @@ import startGame from '../index.js';
 const description = 'Find the greatest common divisor of given numbers.';
 
 const getDivisor = (a, b) => {
-  while (a !== 0 && b !== 0) {
-    if (a > b) {
-      a %= b;
-    } else {
-      b %= a;
-    }
+  if (!b) {
+    return a;
   }
-  return a + b;
+  return getDivisor(b, a % b);
 };
 
-const runCalculations = () => {
+const calcExpression = () => {
   const num1 = getRandomInRange(1, 10);
   const num2 = getRandomInRange(1, 10);
   return {
@@ -27,8 +23,8 @@ const runCalculations = () => {
   };
 };
 
-const gameGcd = () => {
-  startGame(description, runCalculations);
+const runGameGcd = () => {
+  startGame(description, calcExpression);
 };
 
-export default gameGcd;
+export default runGameGcd;

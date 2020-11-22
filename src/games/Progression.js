@@ -7,22 +7,22 @@ import startGame from '../index.js';
 
 const description = 'What number is missing in the progression?';
 
-const randomProgression = (firstNum, step, maxLength) => {
+const getProgression = (firstNum, step, progressionLength) => {
   const progression = [];
 
-  for (let i = 0; i < maxLength; i += 1) {
+  for (let i = 0; i < progressionLength; i += 1) {
     progression.push(firstNum + step * i);
   }
 
   return progression;
 };
 
-const runCalculations = () => {
+const calcExpression = () => {
   const firstNumber = getRandomInRange(1, 10);
   const progressionStep = getRandomInRange(1, 10);
   const progressionLength = 5;
   const unknownNumber = getRandomInRange(0, progressionLength - 1);
-  const progression = randomProgression(firstNumber, progressionStep, progressionLength);
+  const progression = getProgression(firstNumber, progressionStep, progressionLength);
 
   const correctAnswer = String(progression[unknownNumber]);
   // const correctAnswer = `${progression[unknownNumber]}`; - убираем
@@ -33,8 +33,8 @@ const runCalculations = () => {
   };
 };
 
-const gameProgression = () => {
-  startGame(description, runCalculations);
+const runGameProgression = () => {
+  startGame(description, calcExpression);
 };
 
-export default gameProgression;
+export default runGameProgression;

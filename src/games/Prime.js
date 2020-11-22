@@ -6,7 +6,7 @@ const description = 'Answer "yes" if given number is prime. Otherwise answer "no
 // Моё решение задачи isPrime на Hexlet:
 // https://ru.hexlet.io/courses/introduction_to_programming/lessons/mutators/exercise_unit
 
-const isPrime = (number) => {
+const calcIsPrime = (number) => {
   if (number < 2) {
     return false;
   }
@@ -19,16 +19,16 @@ const isPrime = (number) => {
   return true;
 };
 
-const runCalculations = () => {
+const calcExpression = () => {
   const num = getRandomInRange(1, 100);
   return {
-    correctAnswer: isPrime(num) ? 'yes' : 'no',
+    correctAnswer: calcIsPrime(num) ? 'yes' : 'no',
     question: String(num),
   };
 };
 
-const gameIsPrime = () => {
-  startGame(description, runCalculations);
+const runGameIsPrime = () => {
+  startGame(description, calcExpression);
 };
 
-export default gameIsPrime;
+export default runGameIsPrime;

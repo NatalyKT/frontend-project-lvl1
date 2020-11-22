@@ -21,7 +21,7 @@ const calculate = (num1, randomMathSign, num2) => {
   }
 };
 
-const runCalculations = () => {
+const calcExpression = () => {
   const num1 = getRandomInRange(1, 10);
   const num2 = getRandomInRange(1, 10);
   const randomMathSign = mathSigns[getRandomInRange(1, mathSigns.length) - 1];
@@ -31,8 +31,8 @@ const runCalculations = () => {
   };
 };
 
-const gameCalc = () => {
-  startGame(description, runCalculations);
+const runGameCalc = () => {
+  startGame(description, calcExpression);
 };
 
-export default gameCalc;
+export default runGameCalc;
