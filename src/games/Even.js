@@ -4,7 +4,7 @@ import startGame from '../index.js';
 const isEven = (num) => (num % 2 === 0);
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const calcExpression = () => {
+const calc = () => {
   const questionToUser = getRandomInRange(1, 100);
   return {
     correctAnswer: isEven(questionToUser) ? 'yes' : 'no',
@@ -13,7 +13,7 @@ const calcExpression = () => {
 };
 
 const runGameEven = () => {
-  startGame(description, calcExpression);
+  startGame(description, calc);
 };
 
 export default runGameEven;

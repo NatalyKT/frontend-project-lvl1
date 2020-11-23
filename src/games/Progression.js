@@ -17,7 +17,7 @@ const getProgression = (firstNum, step, progressionLength) => {
   return progression;
 };
 
-const calcExpression = () => {
+const calc = () => {
   const firstNumber = getRandomInRange(1, 10);
   const progressionStep = getRandomInRange(1, 10);
   const progressionLength = 5;
@@ -34,7 +34,7 @@ const calcExpression = () => {
 };
 
 const runGameProgression = () => {
-  startGame(description, calcExpression);
+  startGame(description, calc);
 };
 
 export default runGameProgression;
