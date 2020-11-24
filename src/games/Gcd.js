@@ -14,7 +14,7 @@ const getDivisor = (a, b) => {
   return getDivisor(b, a % b);
 };
 
-const calc = () => {
+const getParameters = () => {
   const num1 = getRandomInRange(1, 10);
   const num2 = getRandomInRange(1, 10);
   return {
@@ -24,7 +24,7 @@ const calc = () => {
 };
 
 const runGameGcd = () => {
-  startGame(description, calc);
+  startGame(description, getParameters);
 };
 
 export default runGameGcd;
