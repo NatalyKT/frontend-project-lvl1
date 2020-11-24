@@ -8,7 +8,7 @@ publish:
 	npm publish --dry-run
 
 lint:
-	npx eslint .
+	npx eslint . --fixed
 
 brain-even:
 	node bin/brain-even.js
