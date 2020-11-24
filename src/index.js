@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 import readlineSync from 'readline-sync';
 
 const roundsCount = 3;

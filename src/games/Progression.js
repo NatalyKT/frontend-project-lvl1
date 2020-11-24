@@ -3,8 +3,6 @@ import startGame from '../index.js';
 
 const description = 'What number is missing in the progression?';
 
-const progressionLength = 5;
-
 const getProgression = (firstNum, step, progressionLength) => {
   const progression = [];
 
@@ -14,6 +12,8 @@ const getProgression = (firstNum, step, progressionLength) => {
 
   return progression;
 };
+
+const progressionLength = 5;
 
 const getParameters = () => {
   const firstNumber = getRandomInRange(1, 10);
