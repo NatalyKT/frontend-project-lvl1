@@ -3,9 +3,6 @@ import startGame from '../index.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-// Моё решение задачи isPrime на Hexlet:
-// https://ru.hexlet.io/courses/introduction_to_programming/lessons/mutators/exercise_unit
-
 const isPrime = (number) => {
   if (number < 2) {
     return false;
