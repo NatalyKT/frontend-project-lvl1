@@ -4,7 +4,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/NatalyKT/frontend-project-lvl1/maintainability)
 
-Mind Games is a set of five console games, built on the principle of popular mobile brain training applications. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again. 
+Brain Games is a set of five console games, built on the principle of popular mobile brain training applications. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again. 
 
 ## Setup
 
@@ -17,13 +17,9 @@ Install:
 Play:
 
 ```$ make brain-calc```
-
 ```$ make brain-even```
-
 ```$ make brain-gcd```
-
 ```$ make brain-prime```
-
 ```$ make brain-progression```
 
 **Brain-Even Asciinema**
