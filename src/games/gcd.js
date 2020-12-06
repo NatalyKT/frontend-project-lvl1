@@ -3,24 +3,24 @@ import startGame from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-const getDivisor = (a, b) => {
+const getGreatestDivisor = (a, b) => {
   if (!b) {
     return a;
   }
-  return getDivisor(b, a % b);
+  return getGreatestDivisor(b, a % b);
 };
 
-const getParameters = () => {
+const getQuestionAndCorrectAnswer = () => {
   const num1 = getRandomInRange(1, 10);
   const num2 = getRandomInRange(1, 10);
   return {
-    correctAnswer: String(getDivisor(num1, num2)),
+    correctAnswer: String(getGreatestDivisor(num1, num2)),
     question: `${num1} ${num2}`,
   };
 };
 
 const runGameGcd = () => {
-  startGame(description, getParameters);
+  startGame(description, getQuestionAndCorrectAnswer);
 };
 
 export default runGameGcd;

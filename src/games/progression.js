@@ -15,7 +15,7 @@ const getProgression = (firstNum, step, progressionLength) => {
 
 const progressionLength = 5;
 
-const getParameters = () => {
+const getQuestionAndCorrectAnswer = () => {
   const firstNumber = getRandomInRange(1, 10);
   const progressionStep = getRandomInRange(1, 10);
   const unknownNumber = getRandomInRange(0, progressionLength - 1);
@@ -30,7 +30,7 @@ const getParameters = () => {
 };
 
 const runGameProgression = () => {
-  startGame(description, getParameters);
+  startGame(description, getQuestionAndCorrectAnswer);
 };
 
 export default runGameProgression;

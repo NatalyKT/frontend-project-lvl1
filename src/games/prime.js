@@ -16,7 +16,7 @@ const isPrime = (number) => {
   return true;
 };
 
-const getParameters = () => {
+const getQuestionAndCorrectAnswer = () => {
   const num = getRandomInRange(1, 100);
   return {
     correctAnswer: isPrime(num) ? 'yes' : 'no',
@@ -24,8 +24,8 @@ const getParameters = () => {
   };
 };
 
-const runGameIsPrime = () => {
-  startGame(description, getParameters);
+const runGamePrime = () => {
+  startGame(description, getQuestionAndCorrectAnswer);
 };
 
-export default runGameIsPrime;
+export default runGamePrime;
